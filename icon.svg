@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="50%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#040405"/>
+    </linearGradient>
+
+    <!-- Gold Metallic Gradients -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="30%" stop-color="#eab308"/>
+      <stop offset="70%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#854d0e"/>
+    </linearGradient>
+
+    <linearGradient id="nitroGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#eab308" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded app squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Outer subtle border ring -->
+  <rect x="8" y="8" width="496" height="496" rx="104" fill="none" stroke="#27272a" stroke-width="6"/>
+
+  <!-- Speed lines in background -->
+  <path d="M 60 180 L 452 180 M 80 210 L 432 210 M 110 240 L 402 240" stroke="#27272a" stroke-width="3" stroke-dasharray="16 12" opacity="0.4"/>
+
+  <!-- Indian Accent Tricolor Micro Ribbon at top right -->
+  <path d="M 380 40 L 440 40 L 410 70 L 350 70 Z" fill="#f97316" opacity="0.85"/>
+  <path d="M 390 70 L 450 70 L 420 100 L 360 100 Z" fill="#f4f4f5" opacity="0.85"/>
+  <path d="M 400 100 L 460 100 L 430 130 L 370 130 Z" fill="#22c55e" opacity="0.85"/>
+
+  <!-- Golden Sports Car Silhouette -->
+  <g filter="url(#glow)">
+    <!-- Aerodynamic Supercar Roof & Cabin -->
+    <path d="M 160 250 
+             C 185 205, 230 185, 290 185 
+             C 340 185, 375 210, 400 250 
+             Z" 
+          fill="#18181b" stroke="url(#goldGrad)" stroke-width="8" stroke-linejoin="round"/>
+    
+    <!-- Windshield & Glass -->
+    <path d="M 180 245 
+             C 200 215, 235 200, 285 200 
+             C 330 200, 360 218, 380 245 
+             Z" 
+          fill="#09090b" opacity="0.85"/>
+
+    <!-- Main Aerodynamic Body Shell -->
+    <path d="M 70 310 
+             C 85 285, 120 275, 155 270 
+             C 175 255, 205 248, 260 248 
+             C 335 248, 385 260, 420 275 
+             C 445 285, 460 300, 465 315 
+             C 460 330, 440 335, 415 335 
+             C 390 335, 375 320, 355 320 
+             C 335 320, 320 335, 220 335 
+             C 195 335, 185 320, 160 320 
+             C 140 320, 125 335, 95 335 
+             C 75 335, 65 325, 70 310 
+             Z" 
+          fill="url(#goldGrad)"/>
+
+    <!-- Front Splitter & Rear Diffuser -->
+    <path d="M 60 335 L 110 335 L 105 345 L 55 345 Z" fill="#eab308"/>
+    <path d="M 410 335 L 465 335 L 470 345 L 415 345 Z" fill="#eab308"/>
+
+    <!-- Rear GT Wing Spoiler -->
+    <path d="M 80 240 L 130 232 L 125 242 L 85 248 Z" fill="url(#goldGrad)"/>
+    <rect x="95" y="246" width="6" height="24" fill="#a1a1aa"/>
+    <rect x="115" y="244" width="6" height="26" fill="#a1a1aa"/>
+
+    <!-- Front & Rear Wheels -->
+    <!-- Front Wheel -->
+    <circle cx="390" cy="335" r="38" fill="#18181b" stroke="#3f3f46" stroke-width="6"/>
+    <circle cx="390" cy="335" r="24" fill="#27272a" stroke="url(#goldGrad)" stroke-width="4"/>
+    <circle cx="390" cy="335" r="8" fill="#eab308"/>
+
+    <!-- Rear Wheel -->
+    <circle cx="135" cy="335" r="38" fill="#18181b" stroke="#3f3f46" stroke-width="6"/>
+    <circle cx="135" cy="335" r="24" fill="#27272a" stroke="url(#goldGrad)" stroke-width="4"/>
+    <circle cx="135" cy="335" r="8" fill="#eab308"/>
+
+    <!-- Headlight Beam Flare (LED) -->
+    <polygon points="440,295 480,298 475,306 438,302" fill="#38bdf8" filter="url(#glow)"/>
+    <polygon points="460,298 500,305 490,320 450,308" fill="#38bdf8" opacity="0.3"/>
+
+    <!-- Nitro Exhaust Fire Trail -->
+    <path d="M 65 320 C 35 320, 20 315, 5 318 C 25 326, 45 328, 65 326 Z" fill="url(#nitroGrad)"/>
+  </g>
+
+  <!-- Typography: DESI DRIVE -->
+  <text x="256" y="420" text-anchor="middle" font-family="'Chakra Petch', 'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="44" fill="#ffffff" letter-spacing="4">
+    DESI DRIVE
+  </text>
+  <text x="256" y="455" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="18" fill="#eab308" letter-spacing="6">
+    ULTIMATE GARAGE
+  </text>
+</svg>
